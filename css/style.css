@@ -9,6 +9,7 @@
   --minor-three:#d67ded;
   --minor-four: #277c38;
   --light-one: #faf1fc;
+  --pure-light: #fff;
   --roboto-font: 'Roboto', sans-serif;
   --rubik-font: 'Rubik', sans-serif;
   --smaller-size: 1.6rem;
@@ -34,10 +35,11 @@ img{
 }
 body{
   overflow-x: hidden;
-  background: var(--light-one);
+  background: var(--pure-light);
   color: var(--dark-two);
   font-family: var(--roboto-font);
   font-size: var(--smaller-size);
+  margin-bottom: 8rem;
 }
 .header-container{
   position: relative;
@@ -253,6 +255,48 @@ nav{
   position: absolute;
   right: 50%;
   bottom: 20%;
+}
+/*  */
+.ico-section{
+  margin-top: 6rem;
+  font-family: var(--rubik-font);
+  color: var(--main-two);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 0 14rem;
+  gap: 4rem;
+}
+.ico-article{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.ico-article-h2{
+  font-size: 4rem;
+}
+.ico-article-p-one{
+  font-size: 1.6rem;
+  font-weight: 500;
+  opacity: .8;
+}
+.token-int,.secured-global{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.token-int-info{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.ico-article-icon{
+  color: var(--minor-one);
+  font-size: 2.8rem;
+  background: var(--light-one);
+  box-shadow: 0 1.3px 8px var(--main-two);
+  padding: 1.5rem;
+  border-radius: .8rem;
 }
 /*  */
 /* KEYFRAMES */
