@@ -80,9 +80,10 @@ nav{
 }
 /*  */
 .main-section{
+  position: relative;
   font-family: var(--rubik-font);
   padding: 0 14rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -119,8 +120,8 @@ nav{
 /*  */
 .crypto-prices-box{
   position: absolute;
-  top: 28%;
-  right: 10%;
+  top: 34%;
+  right: 8%;
   background: var(--light-one);
   color: var(--main-two);
   border-radius: 1rem;
@@ -129,6 +130,7 @@ nav{
   flex-direction: column;
   gap: 2rem;
   z-index: 99;
+  /* z-index: -1; */
   box-shadow: 0 .1rem 1.2rem var(--dark-two);
   animation: pushPricesBox 10s infinite alternate-reverse;
 }
@@ -186,7 +188,72 @@ nav{
 .main-sec-usdt-image{
   animation: coinImagesRotate 25s infinite;
 }
-
+/*  */
+/*  */
+.main-grid{
+  position: relative;
+}
+.main-grid-cols{
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+.main-grid-col{
+  width: 2px;
+  background: var(--minor-one);
+}
+.main-grid-rows{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+.main-grid-row{
+  height: 2px;
+  background: var(--minor-one);
+}
+/* main section icons */
+.circle-icon{
+  margin-top: -40px;
+  margin-left: 40px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background: linear-gradient(55deg, rgba(16, 24, 60, 0.544), rgba(204, 93, 232, 0.982));
+}
+.square-icon{
+  width: 20px;
+  height: 20px;
+  transform: rotate(25deg);
+  background: var(--light-one);
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+.square-icon-two{
+  box-shadow: 0 0 0 2px var(--light-one);
+  height: 25px;
+  width: 25px;
+  transform: rotate(15deg);
+  position: absolute;
+  right: 5%;
+  bottom: 25%;
+}
+.circle-icon-two{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--light-one);
+  position: absolute;
+  right: 50%;
+  bottom: 20%;
+}
 /*  */
 /* KEYFRAMES */
 /*  */
