@@ -120,7 +120,7 @@ nav{
   box-shadow: 0 0 0 1.8px var(--minor-one);
 }
 /*  */
-.crypto-prices-box{
+.token-launch-box{
   position: absolute;
   top: 34%;
   right: 8%;
@@ -136,60 +136,71 @@ nav{
   box-shadow: 0 .1rem 1.2rem var(--dark-two);
   animation: pushPricesBox 10s infinite alternate-reverse;
 }
-.main-btc{
+.token-launch-h2{
+  font-size: 1.8rem;
+  text-align: center;
+}
+.countdown-time-digit{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 8rem;
-  box-shadow: 0 0 0 1.5px var(--main-two);
-  padding: 1rem 2rem;
+  gap: 2rem;
+}
+.countdown-digit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  width: 64px;
+  font-weight: 700;
+  font-size: 2.2rem;
+  box-shadow: 0 1.2px 8px rgba(33, 37, 41, 0.419);
+  padding: 1.5rem;
   border-radius: .8rem;
 }
-.main-btc-img-and-btc{
+.countdown-time-letters{
+  margin-top: -8px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
-.main-coin-image{
-  width: 50px;
+.countdown-letter{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  color: rgba(33, 37, 41, 0.768);
+}
+.raised-funds{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.7rem;
+}
+.raised-progress{
+  background: rgba(33, 37, 41, 0.093);
+  height: 18px;
+  width: 100%;
+  border-radius: 10rem;
+  position: relative;
+}
+.raised-progress-inner{
+  background: linear-gradient(160deg, rgba(38, 55, 139, 0.987), rgb(204, 93, 232, 0.989));
+  height: 100%;
+  width: 150px;
+  border-radius: 10rem 0 0 10rem;
+}
+.raised-progress-toggle{
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translateY(-50%);
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
+  background: var(--light-one);
+  box-shadow: 0 1px 8px  rgba(33, 37, 41, 0.516), inset 0 -1px 10px rgba(33, 37, 41, 0.541);
 }
-.main-coin{
-  font-size: var(--medium-size);
-  font-weight: 600;
-}
-.main-price{
-  font-weight: 500;
-  font-size: 1.9rem;
-  color: var(--minor-four);
-}
-.main-buy-btn:link,.main-buy-btn:visited{
-  align-self: center;
-  background: var(--main-two);
-  color: var(--light-one);
-  padding: 1.3rem 3rem;
-  border-radius: .8rem;
-  margin-top: 2rem;
-  transition: .5s;
-}
-.main-buy-btn:hover,.main-buy-btn:active{
-  background: transparent;
-  box-shadow: 0 0 0 1.5px var(--main-two);
-  color: var(--main-two);
-}
-.main-sec-btc-image{
-  animation: coinImagesRotate 28s infinite;
-}
-.main-sec-eth-image{
-  animation: coinImagesRotate 23s infinite;
-}
-.main-sec-sol-image{
-  animation: coinImagesRotate 21s infinite;
-}
-.main-sec-usdt-image{
-  animation: coinImagesRotate 25s infinite;
-}
+
 /*  */
 /*  */
 .main-grid{
@@ -292,7 +303,12 @@ nav{
 }
 .ico-article-icon{
   color: var(--minor-one);
-  font-size: 2.8rem;
+  font-size: 2.4rem;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--light-one);
   box-shadow: 0 1.3px 8px var(--main-two);
   padding: 1.5rem;
