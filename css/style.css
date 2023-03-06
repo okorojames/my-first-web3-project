@@ -365,10 +365,11 @@ nav{
 /*  */
 /*  */
 .why-choose-token-section{
+  position: relative;
   color: var(--light-one);
-  /* height: 40vh; */
   background: linear-gradient(to right, rgba(16, 24, 65, 0.9), rgba(204, 93, 232, 0.95));
-  padding: 12rem 14rem;
+  padding: 10rem 14rem 12rem 14rem;
+clip-path: circle(90.0% at 50% 98%);
 }
 .choose-token-first-context{
   width: 80%;
@@ -430,6 +431,12 @@ nav{
 }
 .choose-token-col-6 .choose-token-grid-icon{
   color: var(--minor-three);
+}
+.why-choose-section-main-grid{
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  z-index: -1;
 }
 /*  */
 /* KEYFRAMES */
